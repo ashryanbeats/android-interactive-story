@@ -1,16 +1,17 @@
-package ashryanbeats.com.interactivestory;
+package ashryanbeats.com.interactivestory.ui;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
+
+import ashryanbeats.com.interactivestory.R;
+import ashryanbeats.com.interactivestory.model.Page;
 
 
 public class StoryActivity extends Activity {
 
+    private Page[] mPages;
     public static final String TAG = StoryActivity.class.getSimpleName();
 
     @Override
