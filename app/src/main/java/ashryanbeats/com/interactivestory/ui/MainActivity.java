@@ -37,6 +37,13 @@ public class MainActivity extends Activity {
         intent.putExtra(getString(R.string.key_name), name);
         startActivity(intent);
     }
+
+    // Reset username when resuming from the beginning
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mNameField.setText("");
+    }
 }
 
 
